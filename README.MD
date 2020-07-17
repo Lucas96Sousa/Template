@@ -1,12 +1,12 @@
-#Configuração do Sequelize
+# Configuração do Sequelize
 O arquivo .sequelizerc irá determinar o caminho quando iniciarmos o sequelize com o comando npx ou yarn sequelize init.
 
 yarn add nodemon sequelize-cli sucrase prettier eslint eslint-config-prettier eslint-plugin-prettier -D
 
-#Nodemon e Sucrase
+# Nodemon e Sucrase
 Para que possamos usar o Import/Export no node, iremos utilizar o sucrase para fazer a configuração,
 
-#Database - Utilizando o Postgres e o Sequelize
+# Database - Utilizando o Postgres e o Sequelize
 
 require('dotenv/config');
 
@@ -24,14 +24,14 @@ undercoredAll: true,
 },
 };
 
-#Prettier e Eslint
+# Prettier e Eslint
 Para a configuração da estilização do código será utilizado o eslint com o prettier
 
 #Criando migrations no sequelize
 
 yarn sequelize migration:create --name=
 
-#Migration de User padrão
+# Migration de User padrão
 id: {
 type: Sequelize.INTEGER,
 primaryKey: true,
